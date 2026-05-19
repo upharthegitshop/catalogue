@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Circle border -->
+  <circle cx="24" cy="24" r="20" stroke="#e8c5df" stroke-width="1.5" fill="none"/>
+  <!-- Letter U -->
+  <text x="24" y="32" font-family="Playfair Display, Georgia, serif" font-size="24" font-weight="400" fill="#e8c5df" text-anchor="middle">U</text>
+</svg>

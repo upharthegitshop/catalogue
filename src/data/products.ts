@@ -1,0 +1,52 @@
+import type { Product } from '../types';
+
+export const DUMMY_PRODUCTS: Product[] = [
+  {
+    id: "1",
+    name: "Handcrafted Candle Set",
+    description: "Set of 3 premium soy candles with calming lavender, vanilla, and rose scents. Perfect for cozy evenings.",
+    image_url: "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=400&h=400&fit=crop",
+    costPrice: 450,
+    sellingPrice: 699,
+  },
+  {
+    id: "2",
+    name: "Personalized Photo Frame",
+    description: "Elegant wooden frame with custom engraving. A timeless gift to cherish memories forever.",
+    image_url: "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=400&h=400&fit=crop",
+    costPrice: 320,
+    sellingPrice: 549,
+  },
+  {
+    id: "3",
+    name: "Luxury Gift Hamper",
+    description: "Curated collection of gourmet chocolates, artisan cookies, and premium tea in a beautiful basket.",
+    image_url: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&h=400&fit=crop",
+    costPrice: 850,
+    sellingPrice: 1299,
+  },
+  {
+    id: "4",
+    name: "Crystal Jewelry Box",
+    description: "Stunning vintage-style jewelry box with velvet interior. Perfect for storing precious accessories.",
+    image_url: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop",
+    costPrice: 580,
+    sellingPrice: 899,
+  },
+  {
+    id: "5",
+    name: "Succulent Plant Set",
+    description: "Beautiful mini succulents in decorative ceramic pots. Low maintenance, perfect for home or office.",
+    image_url: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&h=400&fit=crop",
+    costPrice: 280,
+    sellingPrice: 449,
+  },
+  {
+    id: "6",
+    name: "Silk Scarf Collection",
+    description: "Luxurious hand-painted silk scarves with unique floral patterns. A statement accessory.",
+    image_url: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400&h=400&fit=crop",
+    costPrice: 720,
+    sellingPrice: 1099,
+  },
+];

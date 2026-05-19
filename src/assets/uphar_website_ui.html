@@ -1,0 +1,211 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+.uphar-root{font-family:'Jost',sans-serif;background:#fdf8fb;min-height:100vh;}
+
+.nav{background:#7a4d6a;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:52px;}
+.nav-links{display:flex;gap:28px;}
+.nav-links a{color:#e8c5df;font-size:12px;letter-spacing:2px;text-decoration:none;font-weight:300;text-transform:uppercase;}
+.nav-links a:hover{color:#fff;}
+.nav-icons{display:flex;gap:18px;color:#e8c5df;font-size:18px;cursor:pointer;}
+
+.hero{background:#7a4d6a;padding:22px 32px 32px;text-align:center;}
+.logo-ring{width:64px;height:64px;border-radius:50%;border:1.5px solid #c49ab8;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
+.logo-u{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:#fff;line-height:1;}
+.brand-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:#fff;letter-spacing:8px;}
+.brand-sub{font-size:10px;letter-spacing:5px;color:#c49ab8;margin-top:2px;font-weight:300;}
+.hero-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:#e8c5df;margin-top:10px;opacity:0.85;}
+
+.search-wrap{padding:24px 32px 8px;display:flex;gap:10px;align-items:center;}
+.search-box{flex:1;background:#fff;border:0.5px solid #e8c5df;border-radius:50px;padding:10px 20px;font-family:'Jost',sans-serif;font-size:13px;color:#7a4d6a;outline:none;}
+.search-box::placeholder{color:#c49ab8;}
+.filter-btn{background:#fff;border:0.5px solid #e8c5df;border-radius:50px;padding:10px 18px;font-size:12px;color:#9c6b8a;cursor:pointer;letter-spacing:1px;font-family:'Jost',sans-serif;display:flex;align-items:center;gap:6px;white-space:nowrap;}
+
+.cats{display:flex;gap:8px;padding:12px 32px;overflow-x:auto;}
+.cat{background:#fff;border:0.5px solid #e8c5df;border-radius:50px;padding:6px 16px;font-size:11px;color:#9c6b8a;cursor:pointer;white-space:nowrap;letter-spacing:1px;font-weight:300;}
+.cat.active{background:#7a4d6a;color:#e8c5df;border-color:#7a4d6a;}
+
+.section-label{padding:16px 32px 8px;display:flex;align-items:center;gap:12px;}
+.section-label span{font-family:'Cormorant Garamond',serif;font-size:20px;color:#7a4d6a;font-weight:400;}
+.section-label::after{content:'';flex:1;height:0.5px;background:#e8c5df;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;padding:0 32px 20px;}
+
+.card{background:#fff;border-radius:16px;border:0.5px solid #f0dcea;overflow:hidden;cursor:pointer;transition:border-color 0.2s;}
+.card:hover{border-color:#c49ab8;}
+.card-img{width:100%;height:150px;object-fit:cover;display:flex;align-items:center;justify-content:center;font-size:40px;}
+.card-img.c1{background:#f5eef8;}
+.card-img.c2{background:#fdf0f5;}
+.card-img.c3{background:#f0eaf5;}
+.card-img.c4{background:#faf3f8;}
+.card-img.c5{background:#f7ecf4;}
+.card-img.c6{background:#f2edf8;}
+.card-body{padding:12px 14px 14px;}
+.card-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:#5a3350;font-weight:500;line-height:1.3;}
+.card-desc{font-size:11px;color:#b07d9f;margin-top:3px;line-height:1.4;font-weight:300;}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:10px;}
+.card-price{font-size:14px;font-weight:500;color:#7a4d6a;}
+.card-add{width:28px;height:28px;border-radius:50%;background:#7a4d6a;border:none;color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;}
+
+.gift-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;}
+
+.banner{margin:8px 32px 20px;background:#7a4d6a;border-radius:16px;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;}
+.banner-text{color:#fff;}
+.banner-text h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;letter-spacing:1px;}
+.banner-text p{font-size:12px;color:#e8c5df;margin-top:4px;font-weight:300;letter-spacing:0.5px;}
+.banner-btn{background:#e8c5df;color:#7a4d6a;border:none;border-radius:50px;padding:10px 22px;font-size:12px;cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:1px;font-weight:400;white-space:nowrap;}
+
+.bottom-nav{background:#fff;border-top:0.5px solid #f0dcea;display:flex;justify-content:space-around;padding:12px 0 8px;}
+.bn-item{display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;color:#c49ab8;font-size:10px;letter-spacing:1px;}
+.bn-item.active{color:#7a4d6a;}
+.bn-item i{font-size:20px;}
+</style>
+
+<h2 class="sr-only">Uphar — The Gift Shop website UI mockup</h2>
+
+<div class="uphar-root">
+
+  <div class="nav">
+    <div class="nav-links">
+      <a href="#">New</a>
+      <a href="#">Collections</a>
+      <a href="#">Occasions</a>
+    </div>
+    <div class="nav-icons">
+      <i class="ti ti-heart" aria-hidden="true"></i>
+      <i class="ti ti-shopping-bag" aria-hidden="true"></i>
+      <i class="ti ti-user" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="logo-ring">
+      <span class="logo-u">U</span>
+    </div>
+    <div class="brand-name">UPHAR</div>
+    <div class="brand-sub">THE GIFT SHOP</div>
+    <div class="hero-tag">✦ Curated with love, gifted with joy ✦</div>
+  </div>
+
+  <div class="search-wrap">
+    <input class="search-box" placeholder="Search for the perfect gift..." />
+    <button class="filter-btn"><i class="ti ti-adjustments-horizontal" style="font-size:14px;" aria-hidden="true"></i> Filter</button>
+  </div>
+
+  <div class="cats">
+    <div class="cat active">All Gifts</div>
+    <div class="cat">Birthday</div>
+    <div class="cat">Anniversary</div>
+    <div class="cat">Self Care</div>
+    <div class="cat">Luxury</div>
+    <div class="cat">Hampers</div>
+    <div class="cat">Personalized</div>
+  </div>
+
+  <div class="section-label"><span>Featured Gifts</span></div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img c1">
+        <svg width="56" height="56" viewBox="0 0 56 56"><rect x="12" y="26" width="32" height="22" rx="3" fill="#9c6b8a" opacity="0.8"/><rect x="9" y="20" width="38" height="10" rx="3" fill="#7a4d6a"/><rect x="25" y="20" width="6" height="28" fill="#e8c5df" opacity="0.7"/><ellipse cx="22" cy="19" rx="8" ry="5" fill="#c49ab8" transform="rotate(-20 22 19)"/><ellipse cx="34" cy="19" rx="8" ry="5" fill="#c49ab8" transform="rotate(20 34 19)"/><ellipse cx="28" cy="20" rx="4" ry="3.5" fill="#f0d8ea"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Handcrafted Candle Set</div>
+        <div class="card-desc">Soy candles — lavender, vanilla & rose</div>
+        <div class="card-footer">
+          <span class="card-price">₹ 1,299</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img c2">
+        <svg width="56" height="56" viewBox="0 0 56 56"><rect x="10" y="14" width="36" height="28" rx="3" fill="#9c6b8a" opacity="0.75"/><rect x="14" y="18" width="28" height="20" rx="2" fill="#f9f0f6"/><rect x="14" y="18" width="28" height="6" rx="2" fill="#e8c5df"/><circle cx="28" cy="13" r="3" fill="#c49ab8"/><line x1="28" y1="10" x2="28" y2="7" stroke="#9c6b8a" stroke-width="1.5"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Personalized Photo Frame</div>
+        <div class="card-desc">Engraved wooden frame with custom text</div>
+        <div class="card-footer">
+          <span class="card-price">₹ 899</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img c3">
+        <svg width="56" height="56" viewBox="0 0 56 56"><rect x="8" y="24" width="40" height="26" rx="4" fill="#7a4d6a" opacity="0.8"/><rect x="6" y="18" width="44" height="10" rx="4" fill="#9c6b8a"/><rect x="24" y="18" width="8" height="32" fill="#e8c5df" opacity="0.6"/><ellipse cx="21" cy="17" rx="9" ry="5.5" fill="#c49ab8" transform="rotate(-18 21 17)"/><ellipse cx="35" cy="17" rx="9" ry="5.5" fill="#c49ab8" transform="rotate(18 35 17)"/><ellipse cx="28" cy="18" rx="5" ry="4" fill="#f5e0f0"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Luxury Gift Hamper</div>
+        <div class="card-desc">Gourmet chocolates, cookies & premium tea</div>
+        <div class="card-footer">
+          <span class="card-price">₹ 2,499</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img c4">
+        <svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="18" fill="#9c6b8a" opacity="0.2"/><circle cx="28" cy="28" r="13" fill="#9c6b8a" opacity="0.3"/><path d="M22 28 Q28 18 34 28 Q28 38 22 28Z" fill="#7a4d6a" opacity="0.8"/><circle cx="28" cy="28" r="4" fill="#e8c5df"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Aromatherapy Kit</div>
+        <div class="card-desc">Essential oils & ceramic diffuser set</div>
+        <div class="card-footer">
+          <span class="card-price">₹ 1,799</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img c5">
+        <svg width="56" height="56" viewBox="0 0 56 56"><rect x="14" y="16" width="28" height="28" rx="14" fill="#9c6b8a" opacity="0.25"/><rect x="20" y="22" width="16" height="16" rx="8" fill="#7a4d6a" opacity="0.7"/><rect x="26" y="12" width="4" height="10" rx="2" fill="#c49ab8"/><rect x="18" y="15" width="8" height="5" rx="2" fill="#e8c5df" transform="rotate(-30 18 15)"/><rect x="30" y="15" width="8" height="5" rx="2" fill="#e8c5df" transform="rotate(30 30 15)"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Silk Scarf & Brooch</div>
+        <div class="card-desc">Hand-painted silk with floral brooch pin</div>
+        <div class="card-footer">
+          <span class="card-price">₹ 1,599</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img c6">
+        <svg width="56" height="56" viewBox="0 0 56 56"><rect x="10" y="20" width="36" height="24" rx="3" fill="#9c6b8a" opacity="0.7"/><rect x="16" y="24" width="24" height="4" rx="2" fill="#f9f0f6" opacity="0.8"/><rect x="16" y="31" width="16" height="3" rx="1.5" fill="#f9f0f6" opacity="0.5"/><rect x="16" y="37" width="10" height="3" rx="1.5" fill="#f9f0f6" opacity="0.5"/><rect x="8" y="14" width="40" height="8" rx="3" fill="#7a4d6a"/><rect x="25" y="12" width="6" height="10" fill="#e8c5df" opacity="0.7"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Personalised Journal</div>
+        <div class="card-desc">Gold-embossed name on linen hardcover</div>
+        <div class="card-footer">
+          <span class="card-price">₹ 699</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="banner">
+    <div class="banner-text">
+      <h3>Gift with a personal touch</h3>
+      <p>Free personalisation on orders above ₹999</p>
+    </div>
+    <button class="banner-btn">Shop Now</button>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="bn-item active"><i class="ti ti-home" aria-hidden="true"></i><span>Home</span></div>
+    <div class="bn-item"><i class="ti ti-category" aria-hidden="true"></i><span>Browse</span></div>
+    <div class="bn-item"><i class="ti ti-heart" aria-hidden="true"></i><span>Wishlist</span></div>
+    <div class="bn-item"><i class="ti ti-shopping-bag" aria-hidden="true"></i><span>Cart</span></div>
+    <div class="bn-item"><i class="ti ti-user" aria-hidden="true"></i><span>Profile</span></div>
+  </div>
+
+</div>
