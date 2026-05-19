@@ -19,6 +19,7 @@ import {
   X,
   Tag,
   Plus,
+  Lightbulb,
 } from 'lucide-react';
 
 const Admin = () => {
@@ -427,7 +428,7 @@ const Admin = () => {
                 {/* Live Calculation Preview */}
                 {productCostPrice && productSellingPrice && productQuantity && (
                   <div className="bg-gradient-to-r from-gray-50 to-white p-4 rounded-xl border border-gray-100">
-                    <p className="text-xs text-gray-500 mb-3 font-medium">💡 Quick Summary</p>
+                    <p className="text-xs text-gray-500 mb-3 font-medium flex items-center gap-1"><Lightbulb size={14} /> Quick Summary</p>
                     <div className="grid grid-cols-3 gap-4">
                       <div className="text-center p-3 bg-amber-50 rounded-lg border border-amber-100">
                         <p className="text-[10px] text-gray-500 mb-1">You'll Pay</p>
