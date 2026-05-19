@@ -377,13 +377,13 @@ const Admin = () => {
                     </label>
                     <span className="block text-[10px] text-gray-400 mb-2">You paid per piece</span>
                     <div className="relative">
-                      <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm">₹</span>
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">₹</span>
                       <input
                         type="number"
                         value={productCostPrice}
                         onChange={(e) => setProductCostPrice(e.target.value)}
                         placeholder="100"
-                        className="form-input pl-8"
+                        className="form-input pl-9"
                         min="0"
                         required
                       />
@@ -395,13 +395,13 @@ const Admin = () => {
                     </label>
                     <span className="block text-[10px] text-gray-400 mb-2">You'll sell per piece</span>
                     <div className="relative">
-                      <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm">₹</span>
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">₹</span>
                       <input
                         type="number"
                         value={productSellingPrice}
                         onChange={(e) => setProductSellingPrice(e.target.value)}
                         placeholder="150"
-                        className="form-input pl-8"
+                        className="form-input pl-9"
                         min="0"
                         required
                       />
