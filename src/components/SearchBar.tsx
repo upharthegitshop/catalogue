@@ -28,16 +28,19 @@ const SearchBar = ({ value, onChange, tags = [], selectedTag = '', onTagSelect }
           className="flex-1 px-4 sm:px-5 md:px-6 py-2.5 sm:py-3 md:py-3.5 lg:py-4 text-sm sm:text-base lg:text-lg border border-gray-200 rounded-full bg-white text-[var(--charcoal)] outline-none transition-all duration-200 focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary-light)] shadow-sm"
         />
         
-        {/* Mobile Category Button */}
+        {/* Mobile Category Button - Icon Only */}
         {tags.length > 0 && (
           <button
             onClick={() => setIsOverlayOpen(true)}
-            className="sm:hidden flex items-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[var(--charcoal)] shadow-sm hover:border-[var(--primary)] transition-all"
+            className="sm:hidden relative flex items-center justify-center w-11 h-11 bg-white border border-gray-200 rounded-full text-[var(--charcoal)] shadow-sm hover:border-[var(--primary)] transition-all active:scale-95"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/>
             </svg>
-            {selectedTag || 'Category'}
+            {/* Active filter indicator dot */}
+            {selectedTag && (
+              <span className="absolute -top-0.5 -right-0.5 w-3 h-3 bg-[var(--primary)] rounded-full border-2 border-white" />
+            )}
           </button>
         )}
       </div>
